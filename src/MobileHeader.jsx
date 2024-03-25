@@ -108,7 +108,7 @@ class MobileHeader extends React.Component {
         {mainMenu.length > 0 ? (
           <div className="w-100 d-flex justify-content-start">
 
-            <Menu className="position-static">
+            {/* <Menu className="position-static">
               <MenuTrigger
                 tag="button"
                 className="icon-button"
@@ -124,11 +124,11 @@ class MobileHeader extends React.Component {
               >
                 {this.renderMainMenu()}
               </MenuContent>
-            </Menu>
+            </Menu> */}
           </div>
         ) : null}
         <div className={`w-100 d-flex ${logoClasses}`}>
-          { logoDestination === null ? <Logo className="logo" src={logo} alt={logoAltText} /> : <LinkedLogo className="logo" {...logoProps} itemType="http://schema.org/Organization" />}
+          {logoDestination === null ? <Logo className="logo" src={logo} alt={logoAltText} /> : <LinkedLogo className="logo" {...logoProps} itemType="http://schema.org/Organization" />}
         </div>
         {userMenu.length > 0 || loggedOutItems.length > 0 ? (
           <div className="w-100 d-flex justify-content-end align-items-center">
