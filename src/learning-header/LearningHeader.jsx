@@ -46,7 +46,7 @@ const LearningHeader = ({
         {headerLogo}
         <div className="flex-grow-1 course-title-lockup" style={{ lineHeight: 1 }}>
 {/*           <span className="d-block small m-0">{courseOrg} {courseNumber}</span> */}
-          <span className="d-block m-0 font-weight-bold course-title">{courseTitle}</span>
+{/*           <span className="d-block m-0 font-weight-bold course-title">{courseTitle}</span> */}
         </div>
 {/*         {showUserDropdown && authenticatedUser && (
         <AuthenticatedUserDropdown
