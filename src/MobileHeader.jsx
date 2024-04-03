@@ -132,7 +132,7 @@ class MobileHeader extends React.Component {
         </div>
         {userMenu.length > 0 || loggedOutItems.length > 0 ? (
           <div className="w-100 d-flex justify-content-end align-items-center">
-            <Menu tag="nav" aria-label={intl.formatMessage(messages['header.label.secondary.nav'])} className="position-static">
+{/*             <Menu tag="nav" aria-label={intl.formatMessage(messages['header.label.secondary.nav'])} className="position-static">
               <MenuTrigger
                 tag="button"
                 className="icon-button"
@@ -144,7 +144,7 @@ class MobileHeader extends React.Component {
               <MenuContent tag="ul" className="nav flex-column pin-left pin-right border-top shadow py-2">
                 {loggedIn ? this.renderUserMenuItems() : this.renderLoggedOutItems()}
               </MenuContent>
-            </Menu>
+            </Menu> */}
           </div>
         ) : null}
       </header>
